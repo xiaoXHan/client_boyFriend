@@ -1,0 +1,127 @@
+.question-infor {
+    margin-bottom: 28rpx;
+}
+
+.question-index {
+    width: 250rpx;
+    padding: 0 20rpx;
+    height: 64rpx;
+    background: #ffb1b4;
+    border-radius: 32rpx;
+    font-size: 30rpx;
+    color: #fff;
+    line-height: 64rpx;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 auto 28rpx;
+}
+
+.question-title-box {
+    margin-left: 24rpx;
+    margin-bottom: 28rpx;
+}
+
+.question-perImg {
+    width: 94rpx;
+    height: 94rpx;
+    margin-right: 24rpx;
+}
+
+.quesition-title {
+    max-width: 500rpx;
+    font-size: 36rpx;
+    color: #050505;
+    padding: 19rpx 30rpx;
+    line-height: 52rpx;
+    border: 2rpx solid #050505;
+    border-radius: 12rpx;
+    position: relative;
+}
+
+.left-point {
+    position: absolute;
+    left: -30rpx;
+    top: 30rpx;
+}
+
+.left-point:after,.left-point:before {
+    width: 0;
+    height: 0;
+    border: 16rpx solid transparent;
+    border-right-color: #050505;
+    position: absolute;
+    left: 0;
+    content: "";
+}
+
+.left-point:before {
+    top: 0;
+    left: 2rpx;
+    border-right-color: white;
+    z-index: 5;
+}
+
+.quesition-img {
+    width: 450rpx;
+    border-radius: 10rpx;
+    margin-left: 170rpx;
+    margin-bottom: 28rpx;
+}
+
+.question-select-box {
+    width: 505rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    border: 1px solid #ffb2b5;
+    margin-left: 140rpx;
+    padding-top: 20rpx;
+}
+
+.question-select {
+    width: 376rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    border: 1px solid #ffb2b5;
+    padding: 20rpx 20rpx;
+    padding-right: 50rpx;
+    margin-bottom: 20rpx;
+    line-height: 42rpx;
+    color: #ffb2b5;
+    font-size: 30rpx;
+    position: relative;
+}
+
+.question-select.active {
+    background: #ffb2b5;
+    color: #fff;
+    animation: scaleAnimate 0.3s ease;
+}
+
+@-webkit-keyframes scaleAnimate {
+    0% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimate {
+    0% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.circle-img {
+    width: 34rpx;
+    height: 34rpx;
+    position: absolute;
+    top: 50%;
+    margin-top: -17rpx;
+    right: 20rpx;
+}

@@ -1,0 +1,12 @@
+<template name="getUserInfo">
+    <view catchtouchmove="cancel" class="overlay" hidden="{{!showAuth}}">
+        <view class="toastBox">
+            <view class="msgBox">
+                <view class="msgTitle">提示</view>
+                <view class="msgContent">只有授权才能正常使用小程序功能</view>
+                <view class="msgContent">我们不会对你的隐私信息进行泄露</view>
+            </view>
+            <button bindopensetting="setUserInfo" class="btnAuth">去授权</button>
+        </view>
+    </view>
+</template>

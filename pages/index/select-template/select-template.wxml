@@ -1,0 +1,18 @@
+<template name="selectTemplate">
+    <view class="question-infor">
+        <view class="question-index" wx:if="{{idx>0}}">第{{idx+1}}题/共{{selectLen}}题</view>
+        <view class="row-start question-title-box">
+            <image class="question-perImg" src="https://tp.18yx.com/c.png"></image>
+            <view class="quesition-title">
+                <view class="left-point"></view>{{problem}}</view>
+        </view>
+        <image catchtap="PreviewImg" class="quesition-img" data-img="{{pro_pic}}" mode="widthFix" src="{{pro_pic}}"></image>
+        <view class="question-select-box column-center">
+            <view catchtap="selectTap" class="question-select {{item.active?'active':''}}" data-key="{{idx}}" data-slectKey="{{selectIdx}}" wx:for="{{answers}}" wx:for-index="selectIdx" wx:key="property">
+          {{item.options}}.{{item.result}}
+          <image class="circle-img" src="https://tp.18yx.com/g.png" wx:if="{{!item.active}}"></image>
+                <image class="circle-img" src="https://tp.18yx.com/h.png" wx:else></image>
+            </view>
+        </view>
+    </view>
+</template>

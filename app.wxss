@@ -1,0 +1,66 @@
+view,input,button,text,textarea {
+    font-family: MicroSoft Yahei;
+    font-size: 24rpx;
+    color: #343535;
+}
+
+image {
+    display: block;
+}
+
+.btn-hover {
+    background: transparent;
+}
+
+.mgb0 {
+    margin-bottom: 0;
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    height: 44px;
+    line-height: 44px;
+    padding-top: 20px;
+}
+
+.header .title {
+    font-size: 40rpx;
+    letter-spacing: 1px;
+    color: #050505;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.navBack {
+    width: 10px;
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 13px 30px 13px 20px;
+}

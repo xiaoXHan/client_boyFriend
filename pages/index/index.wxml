@@ -1,0 +1,24 @@
+<import src="select-template/select-template.wxml"></import>
+<import src="result-template/result-template.wxml"></import>
+<view class="trophy-box" hidden="{{!trophyState}}">
+    <image src="https://tp.18yx.com/trophy.gif"></image>
+</view>
+<image catchtap="onMusicTap" class="music-img" src="{{isPlayMusic?'https://tp.18yx.com/j.png':'https://tp.18yx.com/k.png'}}"></image>
+<scroll-view scrollY class="container" scrollTop="{{scrollTop}}" scrollWithAnimation="true">
+    <view id="pageCon">
+        <view class="column-center index-page" style="height:{{screenHeight}}">
+            <image class="top-love-img" src="https://tp.18yx.com/b.png"></image>
+            <view class="column-center top-text">
+                <text>女王殿下，对于您最宠爱的男臣</text>
+                <text>通过{{selectLen}}个小细节</text>
+                <text class="red-text">看看他对你有多好，全球能排第几</text>
+            </view>
+            <image class="top-bike-img" src="https://tp.18yx.com/a.gif"></image>
+            <image catchtap="beginTap" class="begin-answer {{beginTap?'active':''}}" src="https://tp.18yx.com/beigin-btn.png"></image>
+        </view>
+        <view class="question-box">
+            <template is="selectTemplate" data="{{...item,idx:idx,selectLen:selectLen}}" wx:for="{{questionData}}" wx:for-index="idx" wx:key="property"></template>
+        </view>
+        <template is="resultTemplate" data="{{...result,canvasState:canvasState,resultTextData:resultTextData,dotState:dotState}}"></template>
+    </view>
+</scroll-view>

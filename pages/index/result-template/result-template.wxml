@@ -1,0 +1,41 @@
+<template name="resultTemplate">
+    <view class="result-box">
+        <view hidden="{{!resultStart}}">
+            <view class="row-start question-title-box">
+                <image class="question-perImg" src="https://tp.18yx.com/c.png"></image>
+                <view class="quesition-title result-quesition-title">
+                    <view class="left-point"></view>正在批改你的问卷
+          <text class="dotting" wx:if="{{!dotState}}"></text>
+                </view>
+            </view>
+            <view class="row-start question-title-box" wx:for="{{resultTextData}}" wx:for-index="idx" wx:key="property">
+                <image class="question-perImg" src="https://tp.18yx.com/c.png"></image>
+                <view class="quesition-title result-quesition-title">
+                    <view class="left-point"></view>{{item}}
+        </view>
+            </view>
+        </view>
+        <view hidden="{{!resultState}}">
+            <view catchtap="saveImg" class="picCtr" id="picCtr">
+                <canvas canvasId="myCanvas" hidden="{{!canvasState}}"></canvas>
+                <image class="mainImg" id="mainImg" src="{{mainImg}}"></image>
+                <image class="codeImg" id="codeImg" src="{{codeImg}}"></image>
+                <image class="cloudImg" id="cloudImg" src="{{cloudImg}}"></image>
+                <view class="rank">{{rank}}</view>
+            </view>
+            <view class="row-between bottom-btn-box">
+                <form reportSubmit="true">
+                    <button class="share-btn" formType="submit" hoverClass="btn-hover" openType="share"></button>
+                </form>
+                <button catchtap="saveImg" open-type="openSetting">
+                    <image class="bottom-btn-img" src="https://tp.18yx.com/nbtn2.png"></image>
+                </button>
+            </view>
+            <view class="row-between bottom-btn-box mgb0">
+                <view>
+                    <image catchtap="tryAgainTap" class="bottom-btn-img bottom-btn-img3" src="https://tp.18yx.com/nbtn3.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

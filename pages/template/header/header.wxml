@@ -1,0 +1,8 @@
+<template name="headerItem">
+    <view class="header" style="padding-top:{{statusBarHeight}}">
+        <image catchtap="navBack" class="navBack" src="https://htef3bvmquzmmr67.oss-cn-hangzhou.aliyuncs.com/2018-04-10/d8ea7bc0750f1a60890c4e79cbd8ed66.png" wx:if="{{navBack}}"></image>
+        <view class="titleBox">
+            <text class="title">{{title}}</text>
+        </view>
+    </view>
+</template>

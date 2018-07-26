@@ -1,0 +1,120 @@
+.save-btn {
+    width: 352rpx;
+    height: 64rpx;
+    line-height: 64rpx;
+    font-size: 26rpx;
+    background: #ffb1b4;
+    border-radius: 32rpx;
+    color: #fffefe;
+    text-align: center;
+    margin: 0 auto 50rpx;
+}
+
+.bottom-btn-box {
+    width: 593rpx;
+    margin: 0 auto 40rpx;
+}
+
+.bottom-btn-img {
+    width: 268rpx;
+    height: 64rpx;
+}
+
+.bottom-btn-img3 {
+    width: 593rpx;
+}
+
+.share-btn {
+    width: 268rpx;
+    height: 64rpx;
+    background: none;
+    background: url('https://tp.18yx.com/nbtn1.png');
+    background-size: 100%;
+}
+
+.picCtr {
+    position: relative;
+    width: 506rpx;
+    height: 755rpx;
+    overflow: hidden;
+    margin: 0 auto 50rpx;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.codeImg {
+    width: 88rpx;
+    height: 88rpx;
+    position: absolute;
+    left: 398rpx;
+    top: 614rpx;
+}
+
+.cloudImg {
+    width: 198rpx;
+    height: 213rpx;
+    position: absolute;
+    left: 308rpx;
+    top: 293rpx;
+}
+
+.rank {
+    font-size: 43rpx;
+    color: #f26c4f;
+    position: absolute;
+    left: 300rpx;
+    top: 232rpx;
+}
+
+.result-quesition-title {
+    font-size: 28rpx;
+}
+
+.dotting {
+    display: inline-block;
+    min-width: 4rpx;
+    min-height: 4rpx;
+    box-shadow: 4rpx 0 currentColor,12rpx 0 currentColor,20rpx 0 currentColor;
+    animation: dot 2s infinite step-start both;
+}
+
+@-webkit-keyframes dot {
+    25% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 4rpx 0 currentColor;
+    }
+
+    75% {
+        box-shadow: 4rpx 0 currentColor,12rpx 0 currentColor;
+    }
+}
+
+@keyframes dot {
+    25% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 4rpx 0 currentColor;
+    }
+
+    75% {
+        box-shadow: 4rpx 0 currentColor,12rpx 0 currentColor;
+    }
+}
